@@ -4,8 +4,8 @@
     {
         public MallardDuck()
         {
-            SetQuackBehaviour(QuackBehaviour.Quack);
-            SetFlyBehaviour(FlyBehaviour.FlyWithWings);
+            SetQuacking(QuackBehaviour.Quack);
+            SetFlying(FlyBehaviour.FlyWithWings);
         }
 
         public override string Display => "I'm a real Mallard duck";

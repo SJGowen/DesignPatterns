@@ -4,8 +4,8 @@
     {
         public ModelDuck()
         {
-            SetFlyBehaviour(FlyBehaviour.FlyNoWay);
-            SetQuackBehaviour(QuackBehaviour.MuteQuack);
+            SetFlying(FlyBehaviour.FlyNoWay);
+            SetQuacking(QuackBehaviour.MuteQuack);
         }
 
         public override string Display => "I'm a model duck";

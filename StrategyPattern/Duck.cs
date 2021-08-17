@@ -11,9 +11,9 @@ namespace StrategyPattern
 
         public abstract string Display { get; }
 
-        public void SetFlyBehaviour(Func<string> flyBehaviour) => Flying = flyBehaviour;
+        public void SetFlying(Func<string> flying) => Flying = flying;
 
-        public void SetQuackBehaviour(Func<string> quackBehaviour) => Quacking = quackBehaviour;
+        public void SetQuacking(Func<string> quacking) => Quacking = quacking;
 
         public string Fly() => Flying();
 
