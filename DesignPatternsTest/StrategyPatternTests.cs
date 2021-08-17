@@ -24,7 +24,7 @@ namespace DesignPatternsTest
             Assert.Equal("<<Silence>>", modelDuck.Quack());
             Assert.Equal("All ducks float, even decoys!", modelDuck.Swim());
 
-            modelDuck.Flying = FlyBehaviour.FlyRocketPowered;
+            modelDuck.SetFlyBehaviour(FlyBehaviour.FlyRocketPowered);
             Assert.Equal("I'm a model duck", modelDuck.Display);
             Assert.Equal("I'm flying with a rocket", modelDuck.Fly());
             Assert.Equal("<<Silence>>", modelDuck.Quack());

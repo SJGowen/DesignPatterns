@@ -4,16 +4,16 @@ namespace StrategyPattern
 {
     public abstract class Duck
     {
-        public Func<string> Flying;
-        public Func<string> Quacking;
+        private Func<string> Flying;
+        private Func<string> Quacking;
 
         public Duck() { }
 
         public abstract string Display { get; }
 
-        public void SetFlyBehavior(Func<string> flyBehaviour) => Flying = flyBehaviour;
+        public void SetFlyBehaviour(Func<string> flyBehaviour) => Flying = flyBehaviour;
 
-        public void SetQuackBehavior(Func<string> quackBehaviour) => Quacking = quackBehaviour;
+        public void SetQuackBehaviour(Func<string> quackBehaviour) => Quacking = quackBehaviour;
 
         public string Fly() => Flying();
 

@@ -4,8 +4,8 @@
     {
         public RubberDuck()
         {
-            Flying = FlyBehaviour.FlyNoWay;
-            Quacking = QuackBehaviour.Squeak;
+            SetFlyBehaviour(FlyBehaviour.FlyNoWay);
+            SetQuackBehaviour(QuackBehaviour.Squeak);
         }
 
         public override string Display => "I'm a rubber duck";
